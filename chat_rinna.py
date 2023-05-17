@@ -9,18 +9,27 @@ if torch.cuda.is_available():
 
 messages = []
 
+MAX_TOKENS = 2048
+
+def encode_prompt(messages):
+    prompt = "<NL>".join(messages)
+    prompt += "<NL>システム: "
+    token_ids = tokenizer.encode(prompt, add_special_tokens=False, return_tensors="pt")
+    return token_ids
+
+def trim_messages(messages, max_tokens):
+    token_ids = encode_prompt(messages)
+    while len(token_ids.tolist()[0]) > max_tokens:
+        messages.pop(0)
+        token_ids = encode_prompt(messages)
+    return messages
+
 while True:
     input_text = input('> ')
     messages.append('ユーザー: ' + input_text)
-    # print(messages)
+    messages = trim_messages(messages, MAX_TOKENS)
 
-    prompt = "<NL>".join(messages)
-    prompt = (
-        prompt
-        + "<NL>"
-        + "システム: "
-    )
-    token_ids = tokenizer.encode(prompt, add_special_tokens=False, return_tensors="pt")
+    token_ids = encode_prompt(messages)
 
     with torch.no_grad():
         output_ids = model.generate(
