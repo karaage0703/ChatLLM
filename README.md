@@ -5,7 +5,7 @@ Chat test scripts for LLM
 ```sh
 $ cd && git clone https://github.com/karaage0703/ChatLLM
 $ cd ~/ChatLLM
-$ docker build -t ubuntu:ChatLLM
+$ docker build -t ubuntu:ChatLLM .
 ```
 
 ## Usage
