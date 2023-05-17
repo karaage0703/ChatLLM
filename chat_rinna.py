@@ -18,6 +18,7 @@ while True:
     prompt = (
         prompt
         + "<NL>"
+        + "システム: "
     )
     token_ids = tokenizer.encode(prompt, add_special_tokens=False, return_tensors="pt")
 
