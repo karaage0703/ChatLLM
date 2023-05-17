@@ -27,8 +27,8 @@ $ docker run -it -v $(pwd):/root ubuntu:ChatLLM
 
 ```sh
 root@hostname:/# cd /root
-root@hostname:/# python3 chat_calm.py
-root@hostname:/# python3 chat_rinna.py
+root@hostname:~# python3 chat_calm.py
+root@hostname:~# python3 chat_rinna.py
 ```
 ## References
 - https://huggingface.co/cyberagent/open-calm-7b
