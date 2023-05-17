@@ -3,8 +3,8 @@ Chat test scripts for LLM
 ## Setup
 
 ```sh
-$ cd && git clone https://github.com/karaage0703/ChatCyberAgent
-$ cd ~/ChatCyberAgent
+$ cd && git clone https://github.com/karaage0703/ChatLLM
+$ cd ~/ChatLLM
 $ docker build -t ubuntu:ChatLLM
 ```
 
