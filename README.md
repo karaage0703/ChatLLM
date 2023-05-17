@@ -13,14 +13,14 @@ $ docker build -t ubuntu:ChatLLM .
 Use GPU
 
 ```sh
-$ cd ~/ChatCyberAgent
+$ cd ~/ChatLLM
 $ docker run -it -v $(pwd):/root --gpus all ubuntu:ChatLLM
 ```
 
 Use CPU 
 
 ```sh
-$ cd ~/ChatCyberAgent
+$ cd ~/ChatLLM
 $ docker run -it -v $(pwd):/root ubuntu:ChatLLM
 ```
 
