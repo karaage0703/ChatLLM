@@ -33,3 +33,4 @@ root@hostname:~# python3 chat_rinna.py
 ## References
 - https://huggingface.co/cyberagent/open-calm-7b
 - https://huggingface.co/rinna/japanese-gpt-neox-3.6b-instruction-sft
+- https://nowokay.hatenablog.com/entry/2023/05/17/144518
