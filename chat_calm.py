@@ -1,5 +1,8 @@
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
+from colorama import Fore, Back, Style, init
+
+init(autoreset=True)
 
 model = AutoModelForCausalLM.from_pretrained("cyberagent/open-calm-3b", device_map="auto", torch_dtype=torch.float16, cache_dir="./")
 tokenizer = AutoTokenizer.from_pretrained("cyberagent/open-calm-3b", cache_dir='./')
@@ -18,4 +21,4 @@ while True:
         )
         
     output = tokenizer.decode(tokens[0], skip_special_tokens=True)
-    print(output)
+    print(Fore.YELLOW + 'CALM: ' + output)
