@@ -40,3 +40,4 @@ root@hostname:~# python3 chat_llama2.py
 - https://note.com/npaka/n/n0ad63134fbe2
 - https://zenn.dev/karaage0703/articles/2b753b4dc26471
 - https://zenn.dev/karaage0703/articles/d58d79d8e77ab8
+- https://zenn.dev/karaage0703/articles/d3893b551c68fa
