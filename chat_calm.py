@@ -19,6 +19,6 @@ while True:
             temperature=0.7,
             pad_token_id=tokenizer.pad_token_id,
         )
-        
+
     output = tokenizer.decode(tokens[0], skip_special_tokens=True)
     print(Fore.YELLOW + 'CALM: ' + output)
