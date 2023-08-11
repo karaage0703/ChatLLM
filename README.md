@@ -16,14 +16,14 @@ Use GPU
 
 ```sh
 $ cd ~/ChatLLM
-$ docker run -it -v $(pwd):/root --gpus all ubuntu:ChatLLM
+$ docker run -it --rm -v $(pwd):/root --gpus all ubuntu:ChatLLM
 ```
 
 Use CPU
 
 ```sh
 $ cd ~/ChatLLM
-$ docker run -it -v $(pwd):/root ubuntu:ChatLLM
+$ docker run -it --rm -v $(pwd):/root ubuntu:ChatLLM
 ```
 
 ### Run app
