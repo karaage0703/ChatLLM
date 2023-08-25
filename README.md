@@ -1,12 +1,58 @@
 # ChatLLM
 Chat test scripts for LLM
-## Setup
+
+## Devcontainer(VS Code)
+
+Setup devcontainer
+
+[Reference(Japanese)](https://zenn.dev/karaage0703/books/80b6999d429abc8051bb/viewer/6ebae8)
+
+## Docker compose
+
+### Docker build
+CPU
 
 ```sh
-$ cd && git clone https://github.com/karaage0703/ChatLLM
-$ cd ~/ChatLLM
-$ docker build -t ubuntu:ChatLLM .
+$ docker compose up base
 ```
+
+GPU
+
+```sh
+$ docker compose up gpu
+```
+
+GPU(Nvidia container)
+
+```sh
+$ docker compose up nvidia
+```
+### Docker run
+
+Check docker image name
+
+```sh
+$ docker ps
+```
+
+```sh
+$ docker exec -it <image name> /bin/bash
+
+# example
+# $ docker exec -it chatllm-nvidia-1 /bin/bash
+```
+
+### Run app
+
+```sh
+root@hostname:/# cd /root
+root@hostname:~# python3 chat_calm.py
+root@hostname:~# python3 chat_rinna.py
+root@hostname:~# python3 chat_rwkv.py
+root@hostname:~# python3 chat_llama2.py
+root@hostname:~# python3 chat_weblab.py
+```
+
 
 ## Usage
 
@@ -43,6 +89,7 @@ root@hostname:/# huggingface-cli login
 root@hostname:/# cd /root
 root@hostname:~# python3 chat_stablelm.py
 ```
+
 ## References
 - https://huggingface.co/cyberagent/open-calm-7b
 - https://huggingface.co/rinna/japanese-gpt-neox-3.6b-instruction-sft
@@ -54,3 +101,4 @@ root@hostname:~# python3 chat_stablelm.py
 - https://zenn.dev/karaage0703/articles/d3893b551c68fa
 - https://note.com/npaka/n/nfacbeb1ae709
 - https://colab.research.google.com/github/mkshing/notebooks/blob/main/stabilityai_japanese_stablelm_alpha_7b.ipynb
+- https://gitlab.com/nvidia/container-images/cuda/blob/master/doc/supported-tags.md

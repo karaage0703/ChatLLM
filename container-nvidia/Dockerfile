@@ -1,4 +1,4 @@
-FROM amd64/ubuntu:20.04
+FROM nvidia/cuda:11.7.1-base-ubuntu22.04
 
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y git python3 python3-pip
