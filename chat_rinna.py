@@ -7,8 +7,8 @@ init(autoreset=True)
 tokenizer = AutoTokenizer.from_pretrained("rinna/japanese-gpt-neox-3.6b-instruction-sft", use_fast=False, cache_dir="./")
 model = AutoModelForCausalLM.from_pretrained("rinna/japanese-gpt-neox-3.6b-instruction-sft", cache_dir="./")
 
-if torch.cuda.is_available():
-    model = model.to("cuda")
+# if torch.cuda.is_available():
+    # model = model.to("cuda")
 
 messages = []
 
