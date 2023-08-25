@@ -1,15 +1,22 @@
 # ChatLLM
 Chat test scripts for LLM
 
-## Devcontainer(VS Code)
+
+## Setup
+Git clone
+```sh
+$ cd && git clone https://github.com/karaage0703/ChatLLM
+```
+
+### Devcontainer(VS Code)
 
 Setup devcontainer
 
 [Reference(Japanese)](https://zenn.dev/karaage0703/books/80b6999d429abc8051bb/viewer/6ebae8)
 
-## Docker compose
+### Docker compose
 
-### Docker build
+#### Docker build
 CPU
 
 ```sh
@@ -27,7 +34,7 @@ GPU(Nvidia container)
 ```sh
 $ docker compose up nvidia
 ```
-### Docker run
+#### Docker run
 
 Check docker image name
 
@@ -42,7 +49,7 @@ $ docker exec -it <image name> /bin/bash
 # $ docker exec -it chatllm-nvidia-1 /bin/bash
 ```
 
-### Run app
+#### Run app
 
 ```sh
 root@hostname:/# cd /root
@@ -53,11 +60,16 @@ root@hostname:~# python3 chat_llama2.py
 root@hostname:~# python3 chat_weblab.py
 ```
 
+### Docker
 
-## Usage
+#### Docker build
 
-### Run docker
+```
+$ cd ~/ChatLLM
+$ docker build -t ubuntu:ChatLLM .
+```
 
+#### Run docker
 Use GPU
 
 ```sh
@@ -75,7 +87,6 @@ $ docker run -it --rm -v $(pwd):/root ubuntu:ChatLLM
 ### Run app
 
 ```sh
-root@hostname:/# cd /root
 root@hostname:~# python3 chat_calm.py
 root@hostname:~# python3 chat_rinna.py
 root@hostname:~# python3 chat_rwkv.py
@@ -86,7 +97,6 @@ for stablelm
 
 ```sh
 root@hostname:/# huggingface-cli login
-root@hostname:/# cd /root
 root@hostname:~# python3 chat_stablelm.py
 ```
 
