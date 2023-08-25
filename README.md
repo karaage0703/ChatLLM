@@ -112,3 +112,5 @@ root@hostname:~# python3 chat_stablelm.py
 - https://note.com/npaka/n/nfacbeb1ae709
 - https://colab.research.google.com/github/mkshing/notebooks/blob/main/stabilityai_japanese_stablelm_alpha_7b.ipynb
 - https://gitlab.com/nvidia/container-images/cuda/blob/master/doc/supported-tags.md
+- https://note.com/npaka/n/nd05b0334cb75
+- https://zenn.dev/tsuzukia/articles/f886a93fc1f2fa
