@@ -7,5 +7,6 @@ RUN pip install tokenizers>=0.13.2 prompt_toolkit numpy torch
 RUN pip install rwkv transformers accelerate sentencepiece colorama
 RUN pip install llama-cpp-python
 RUN pip install einops bitsandbytes scipy
+RUN pip install auto_gptq
 
 WORKDIR /root
