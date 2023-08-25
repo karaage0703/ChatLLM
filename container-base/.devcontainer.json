@@ -4,7 +4,7 @@
 	"name": "container-nvidia",
 	"dockerComposeFile": "../docker-compose.yaml",
 	"service": "base",
-	"workspaceFolder" : "/root",
+	"workspaceFolder" : "/root"
 
 	// "build": {
 	// 	// Sets the run context to one level up instead of the .devcontainer folder.
