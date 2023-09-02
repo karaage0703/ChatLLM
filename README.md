@@ -58,6 +58,7 @@ root@hostname:~# python3 chat_rinna.py
 root@hostname:~# python3 chat_rwkv.py
 root@hostname:~# python3 chat_llama2.py
 root@hostname:~# python3 chat_weblab.py
+root@hostname:~# python3 chat_elyza.py
 ```
 
 ### Docker
@@ -84,7 +85,7 @@ $ cd ~/ChatLLM
 $ docker run -it --rm -v $(pwd):/root ubuntu:ChatLLM
 ```
 
-### Run app
+#### Run app
 
 ```sh
 root@hostname:~# python3 chat_calm.py
@@ -114,3 +115,4 @@ root@hostname:~# python3 chat_stablelm.py
 - https://gitlab.com/nvidia/container-images/cuda/blob/master/doc/supported-tags.md
 - https://note.com/npaka/n/nd05b0334cb75
 - https://zenn.dev/tsuzukia/articles/f886a93fc1f2fa
+- https://note.com/npaka/n/nbb94b45f47a5

@@ -4,6 +4,7 @@
 	"name": "container-gpu",
 	"dockerComposeFile": "../docker-compose.yaml",
 	"service": "gpu",
+	"runServices": ["gpu"],
 	"workspaceFolder" : "/root"
 
 	// "build": {

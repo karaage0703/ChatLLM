@@ -4,6 +4,7 @@
 	"name": "container-nvidia",
 	"dockerComposeFile": "../docker-compose.yaml",
 	"service": "nvidia",
+	"runServices": ["nvidia"],
 	"workspaceFolder" : "/root"
 
 	// "build": {
