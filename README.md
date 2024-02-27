@@ -116,3 +116,4 @@ root@hostname:~# python3 chat_stablelm.py
 - https://note.com/npaka/n/nd05b0334cb75
 - https://zenn.dev/tsuzukia/articles/f886a93fc1f2fa
 - https://note.com/npaka/n/nbb94b45f47a5
+- https://huggingface.co/google/gemma-7b
